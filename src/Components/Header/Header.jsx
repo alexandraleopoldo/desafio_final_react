@@ -1,22 +1,24 @@
 import {Link} from "react-router-dom"
+import logo from "../../assets/images/logomarca.png"
+import { HeaderStyle } from "./style"
 
 export default function Header() {
     return(
-        <header>
-            <img src="" alt="Logo da L`Oreal" />
+        <HeaderStyle>
+            <img src={logo} alt="Logo do Starbucks" />
             <nav>
                 <ul>
                     <li>
-                        <Link>Home</Link>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <Link>Novidades</Link>
+                        <Link to="/novidades">Novidades</Link>
                     </li>
                     <li>
-                        <Link>Sobre</Link>
+                        <Link to="/sobre">Sobre</Link>
                     </li>
                 </ul>
             </nav>
-        </header>
+        </HeaderStyle>
     )
 }
