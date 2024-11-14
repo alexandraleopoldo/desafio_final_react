@@ -2,28 +2,30 @@ import styled from "styled-components";
 
 export const HeaderStyle = styled.header `
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     width: 100%;
 
-     img {
-
-    }
+     & .caixaHeader {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
 
      nav {
         display: flex;
         width: 60%;
         height: 100%;
-        justify-content: center;
+        
         
     }
      ul {
         display: flex;
         width: 100%;
         height: 100%;
-        justify-content: space-evenly;
         list-style: none;
+        justify-content: flex-end;
+        gap: 80px;
     }
     
      li a {
@@ -31,4 +33,5 @@ export const HeaderStyle = styled.header `
         text-decoration: none;
         font-size: 20px;
     }
+     }
 `

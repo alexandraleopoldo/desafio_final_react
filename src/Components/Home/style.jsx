@@ -2,20 +2,21 @@ import styled from "styled-components";
 
 export const Principal = styled.main`
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    min-width: 90%;
-    min-height: 100%;
-
+    width: 100%;
+    height: 100%;
+    
 
 
 & .principalDaHome{
     display: flex;
-    flex-direction: column;
-    width: 50%;
+    flex-direction: row;
+    width: 90%;
     min-height: 100%;
-   
+    position: relative;
+    
+    
 }
 
 & .texto-home {
@@ -23,7 +24,7 @@ export const Principal = styled.main`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 50%;
     min-height: 90%;
     padding: 50px;
     
@@ -31,17 +32,24 @@ export const Principal = styled.main`
      h1 {
         display: flex;
         font-family: "Inter", serif;
-        font-weight: 400;
+        font-weight: 300;
         align-self: flex-start;
+        font-size: 4rem;
     }
      h2 {
         align-self: flex-start;
         font-weight: 400;
+        font-size: 4rem;
         
     }
      span {
         color: #037143;
         font-weight: 800;
+    }
+
+    p {
+        font-weight: 500;
+        margin-bottom: 20px;
     }
     
      button {
@@ -59,30 +67,34 @@ export const Principal = styled.main`
 }
 
 
-& .copos-cores {
+& .bolas-cores {
     display: flex;
     background-color: #037143;
     border-radius: 50%;
     position: fixed;
     top: 30%;
-    right: -20%;
-    width: 900px;
-    height: 980px;
+    right: -30%;
+    width: 1000px;
+    aspect-ratio: 1;
+    z-index: 1;
     
 
     img {
         position: absolute;
-        bottom: 60%;
-        right: 42%;
-        width: 50%;
+        bottom: 54%;
+        right: 50%;
+        width: 46%;
+       
     }
 }
 
 & .copinhos {
     display: flex; 
     width: 200px;
-    align-items: center;
+    justify-content: center;
     height: 20%;
+    align-self: flex-end;
+    justify-self: end;
     
 
     img:hover {

@@ -5,7 +5,8 @@ import { Fundo } from "./style"
 export default function Novidades() {
     return (
         <Fundo>
-            <h3>Cafés Especiais</h3>
+           <div className="caixa-novidades">
+           <h3>Cafés Especiais</h3>
             <h2>Níveis de Torra</h2>
             <p>Os níveis de torra do café são:
 
@@ -16,7 +17,10 @@ Torra Média: equilibra acidez e amargor, oferecendo um sabor mais encorpado com
 Torra Escura: proporciona um sabor mais amargo e encorpado, com notas de chocolate amargo e nozes, e acidez bem baixa; comum em cafés intensos.
 
 Cada nível altera o sabor, aroma e intensidade da bebida, sendo escolhido conforme a sua preferência.</p>
-            <img src={cafe} alt="" />
+           </div>
+          <div className="caixa-imagem-cafe">
+          <img src={cafe} alt="" />
+          </div>
         </Fundo>
     )
 }
