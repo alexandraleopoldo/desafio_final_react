@@ -13,10 +13,10 @@ export const Principal = styled.main`
     display: flex;
     flex-direction: row;
     width: 90%;
-    min-height: 100%;
+    height: 100%;
     position: relative;
     
-    
+   
 }
 
 & .texto-home {
@@ -25,8 +25,8 @@ export const Principal = styled.main`
     justify-content: center;
     align-items: center;
     width: 50%;
-    min-height: 90%;
-    padding: 50px;
+    min-height: 100%;
+    padding: 70px;
     
 
      h1 {
@@ -63,13 +63,25 @@ export const Principal = styled.main`
         border-radius: 50px;
         border: solid;
         align-self: flex-start;
+        
      }
 }
 
+.fundo-verde {
+    background-color: #037143;
+}
+
+.fundo-vermelho {
+    background-color: #97090C;
+    
+}
+
+.fundo-amarelo {
+    background-color: #DECD13;
+}
 
 & .bolas-cores {
     display: flex;
-    background-color: #037143;
     border-radius: 50%;
     position: fixed;
     top: 30%;
@@ -90,17 +102,21 @@ export const Principal = styled.main`
 
 & .copinhos {
     display: flex; 
-    width: 200px;
-    justify-content: center;
+    width: 280px;
+    justify-content: end;
     height: 20%;
     align-self: flex-end;
-    justify-self: end;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    margin: auto;
     
 
     img:hover {
         transform: translateY(-7px);
         rotate: 17deg;
-        transition: 0.7s;
+        transition: 0.9s;
     }
 }
 `
