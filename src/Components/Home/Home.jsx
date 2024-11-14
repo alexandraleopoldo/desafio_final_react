@@ -1,7 +1,9 @@
 import copoAmarelo from "../../assets/images/copo-amarelo.png"
 import { Principal } from "./style"
-
-
+import mAmarelo from "../../assets/images/mini-amarelo.png"
+import mVermelho from "../../assets/images/mini-vermelho.png"
+import mBranco from "../../assets/images/mini-branco.png"
+import { useState } from "react"
 export default function Home() {
     return (
         <Principal>
@@ -14,8 +16,15 @@ export default function Home() {
                 </div>
                 <div className="copos-cores">
                     
-                    <img src={copoAmarelo} alt="" />
+                <img src={copoAmarelo} alt="Copo grande amarelo com macchiato do Starbucks" />
+
                 </div>
+
+                <figure className="copinhos">
+                    <img src={mAmarelo} alt="Copo pequeno amarelo com macchiato do Starbucks" />
+                    <img src={mVermelho} alt="Copo pequeno vermelho com macchiato do Starbucks" />
+                    <img src={mBranco} alt="Copo pequeno branco com  macchiato do Starbucks" />
+                </figure>
             </section>
         </Principal>
     )
