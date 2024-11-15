@@ -10,10 +10,14 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         display: flex;
+        flex-direction: column;
         width: 100vw;
+        min-height: 100vh;
         height: 100%;
         overflow-x: hidden;
         overflow-y: hidden;
+        
+       
         
     }
 

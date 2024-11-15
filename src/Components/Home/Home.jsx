@@ -47,11 +47,10 @@ export default function Home() {
                         <img src={mVermelho} onClick={clicarVermelho}  alt="Copo pequeno vermelho com macchiato do Starbucks" />
                         <img src={mBranco} onClick={clicarBranco}   alt="Copo pequeno branco com  macchiato do Starbucks" />
                 </figure>
-        </div>
-        <div className={`${corFundo} bolas-cores`} >
+          </div>
+          <div className={`${corFundo} bolas-cores`} >
                 <img src={imagem} alt="Copo grande amarelo com macchiato do Starbucks" />
-                
-        </div>
+          </div>
         </SectionHome>
        
     )

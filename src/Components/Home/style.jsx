@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const SectionHome = styled.section`
     flex: 1;
     height: 100%;
+
    
    
 .principalDaHome{
@@ -97,6 +98,7 @@ export const SectionHome = styled.section`
     left: 0;
     right: 0;
     margin: auto;
+    margin-bottom: 30px;
     
 
     img:hover {

@@ -1,10 +1,10 @@
 import cafe from "../../assets/images/cafe-grao.png"
-import { Fundo } from "./style"
+import { FundoNovidades } from "./style"
 
 
 export default function Novidades() {
     return (
-        <Fundo>
+        <FundoNovidades>
            <div className="textos-novidades">
                 <h3>CAFÉS ESPECIAIS</h3>
                 <h2>Níveis de Torra</h2>
@@ -23,6 +23,6 @@ export default function Novidades() {
            <div className="caixa-imagem-cafe">
                 <img src={cafe} alt="" />
            </div>
-        </Fundo>
+        </FundoNovidades>
     )
 }
