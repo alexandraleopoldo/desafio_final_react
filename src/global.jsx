@@ -9,7 +9,27 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
+        display: flex;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        
     }
+
+    button {
+        width: 200px;
+        height: 50px;
+        color: white;
+        background-color: #037143;
+        font-family: "Inter", serif;
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: 50px;
+        border: solid #037143;
+        align-self: flex-start;
+        
+     }
+
+     
 `;

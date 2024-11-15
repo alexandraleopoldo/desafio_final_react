@@ -1,11 +1,11 @@
 import copoAmarelo from "../../assets/images/copo-amarelo.png"
 import copoVermelho from "../../assets/images/copo-vermelho.png"
 import copoBranco from "../../assets/images/copo-branco.png"
-import { Principal } from "./style"
 import mAmarelo from "../../assets/images/mini-amarelo.png"
 import mVermelho from "../../assets/images/mini-vermelho.png"
 import mBranco from "../../assets/images/mini-branco.png"
 import { useState } from "react"
+import { SectionHome } from "./style"
 
 
 export default function Home() {
@@ -34,8 +34,8 @@ export default function Home() {
         }
     
     return (
-        <Principal>
-            <section className="principalDaHome">
+        <SectionHome>
+            <div className="principalDaHome">
                 <div className="texto-home" >
                     <h1> Mais que Café</h1>
                     <h2>Isso é <span>Starbucks</span></h2>
@@ -47,11 +47,12 @@ export default function Home() {
                         <img src={mVermelho} onClick={clicarVermelho}  alt="Copo pequeno vermelho com macchiato do Starbucks" />
                         <img src={mBranco} onClick={clicarBranco}   alt="Copo pequeno branco com  macchiato do Starbucks" />
                 </figure>
-            </section>
-            <section className={`${corFundo} bolas-cores`} >
+        </div>
+        <div className={`${corFundo} bolas-cores`} >
                 <img src={imagem} alt="Copo grande amarelo com macchiato do Starbucks" />
                 
-            </section>
-        </Principal>
+        </div>
+        </SectionHome>
+       
     )
 }

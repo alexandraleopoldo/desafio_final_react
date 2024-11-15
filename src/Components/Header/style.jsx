@@ -5,6 +5,8 @@ export const HeaderStyle = styled.header `
     align-items: center;
     padding: 20px;
     width: 100%;
+    height: 160px;
+    
 
      & .caixaHeader {
         display: flex;

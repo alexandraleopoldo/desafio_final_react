@@ -1,32 +1,30 @@
 import styled from "styled-components";
 
-export const Principal = styled.main`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+export const SectionHome = styled.section`
+    flex: 1;
     height: 100%;
-    
-
-
-& .principalDaHome{
+   
+   
+.principalDaHome{
     display: flex;
     flex-direction: row;
     width: 90%;
+    flex: 1;
     height: 100%;
     position: relative;
-    
+   
    
 }
 
-& .texto-home {
+.texto-home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
-    min-height: 100%;
-    padding: 70px;
+    height: 100%;
+    padding: 0 70px;
+    margin: 0 60px;
     
 
      h1 {
@@ -34,7 +32,7 @@ export const Principal = styled.main`
         font-family: "Inter", serif;
         font-weight: 300;
         align-self: flex-start;
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
      h2 {
         align-self: flex-start;
@@ -52,19 +50,7 @@ export const Principal = styled.main`
         margin-bottom: 20px;
     }
     
-     button {
-        width: 200px;
-        height: 50px;
-        color: white;
-        background-color: #037143;
-        font-family: "Inter", serif;
-        font-weight: 700;
-        font-size: 16px;
-        border-radius: 50px;
-        border: solid;
-        align-self: flex-start;
-        
-     }
+     
 }
 
 .fundo-verde {
@@ -80,7 +66,7 @@ export const Principal = styled.main`
     background-color: #DECD13;
 }
 
-& .bolas-cores {
+.bolas-cores {
     display: flex;
     border-radius: 50%;
     position: fixed;
@@ -100,11 +86,11 @@ export const Principal = styled.main`
     }
 }
 
-& .copinhos {
+.copinhos {
     display: flex; 
     width: 280px;
     justify-content: end;
-    height: 20%;
+    height: 16%;
     align-self: flex-end;
     position: absolute;
     bottom: 0; 
@@ -120,4 +106,3 @@ export const Principal = styled.main`
     }
 }
 `
-// https://meet.google.com/zvh-ymnu-htt
