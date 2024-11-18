@@ -6,5 +6,6 @@ export const Main = styled.main`
     width: 100%;
     height: 80vh;
     flex: 1;
-   
+
+  
 `

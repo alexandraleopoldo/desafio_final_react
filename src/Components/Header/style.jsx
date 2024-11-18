@@ -36,4 +36,47 @@ export const HeaderStyle = styled.header `
         font-size: 20px;
     }
      }
+     @media (max-width: 1224px) {
+        height: 15vh; 
+        padding: 10px;
+
+        & .caixaHeader {
+            nav {
+                width: 70%;
+            }
+
+            ul {
+                gap: 40px; 
+            }
+
+            li a {
+                font-size: 18px; 
+            }
+        }
+    }
+
+
+    @media (max-width: 780px) {
+        height: auto;
+        padding: 10px;
+
+        & .caixaHeader {
+         img{
+            width: 16%;
+            margin-left: 20px;
+         }
+            nav {
+                width: 100%;
+            }
+
+            ul {
+                flex-direction: row;
+                gap: 15px;
+            }
+
+            li a {
+                font-size: 14px; 
+            }
+        }
+      }
 `

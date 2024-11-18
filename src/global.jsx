@@ -17,6 +17,10 @@ export const GlobalStyle = createGlobalStyle`
         overflow-x: hidden;
         overflow-y: hidden;
         
+        @media (max-width: 500px) {
+            overflow-y: auto;
+            
+        }
        
         
     }
@@ -33,6 +37,11 @@ export const GlobalStyle = createGlobalStyle`
         border: solid #037143;
         align-self: flex-start;
         
+        @media (max-width: 980px) {
+            font-size: 10px;
+            width: 120px;
+            height: 34px;
+        }
      }
 
      

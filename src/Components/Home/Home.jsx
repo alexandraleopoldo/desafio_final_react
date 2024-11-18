@@ -6,6 +6,11 @@ import mVermelho from "../../assets/images/mini-vermelho.png"
 import mBranco from "../../assets/images/mini-branco.png"
 import { useState } from "react"
 import { SectionHome } from "./style"
+import { Copinhos } from "./style"
+import { Esconder } from "./style"
+import { TextoHome } from "./style"
+import { BolasCores } from "./style"
+
 
 
 export default function Home() {
@@ -34,24 +39,31 @@ export default function Home() {
         }
     
     return (
+        <>
         <SectionHome>
             <div className="principalDaHome">
-                <div className="texto-home" >
+                <TextoHome>
                     <h1> Mais que Café</h1>
                     <h2>Isso é <span>Starbucks</span></h2>
                     <p>A Starbucks oferece uma variedade de cafés de alta qualidade. Alguns dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o Latte Macchiato e o Espresso. Além disso, a Starbucks oferece bebidas quentes e frias, doces diferenciados e sanduíches.</p>
-                    <button>Saiba Mais</button>
-                </div>
-                <figure className="copinhos">
+                    <button>SAIBA MAIS</button>
+                </TextoHome>
+                <Copinhos>
                         <img src={mAmarelo}  onClick={clicarAmarelo}  alt="Copo pequeno amarelo com macchiato do Starbucks" />
                         <img src={mVermelho} onClick={clicarVermelho}  alt="Copo pequeno vermelho com macchiato do Starbucks" />
                         <img src={mBranco} onClick={clicarBranco}   alt="Copo pequeno branco com  macchiato do Starbucks" />
-                </figure>
+                </Copinhos>
           </div>
-          <div className={`${corFundo} bolas-cores`} >
+          <BolasCores className={`${corFundo}`} >
                 <img src={imagem} alt="Copo grande amarelo com macchiato do Starbucks" />
-          </div>
+          </BolasCores>
+         
         </SectionHome>
-       
+        <Esconder>
+                        <img src={mAmarelo}  onClick={clicarAmarelo}  alt="Copo pequeno amarelo com macchiato do Starbucks" />
+                        <img src={mVermelho} onClick={clicarVermelho}  alt="Copo pequeno vermelho com macchiato do Starbucks" />
+                        <img src={mBranco} onClick={clicarBranco}   alt="Copo pequeno branco com  macchiato do Starbucks" />
+        </Esconder>
+       </>
     )
 }

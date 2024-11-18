@@ -1,11 +1,12 @@
 import cafe from "../../assets/images/cafe-grao.png"
 import { FundoNovidades } from "./style"
-
+import { TextosNovidades } from "./style"
+import { CaixaImagemCafe } from "./style"
 
 export default function Novidades() {
     return (
         <FundoNovidades>
-           <div className="textos-novidades">
+           <TextosNovidades>
                 <h3>CAFÉS ESPECIAIS</h3>
                 <h2>Níveis de Torra</h2>
                 <p>Os níveis de torra do café são:
@@ -18,11 +19,11 @@ export default function Novidades() {
 
                     Cada nível altera o sabor, aroma e intensidade da bebida, sendo escolhido conforme a sua preferência.
                 </p>
-                <button>Saiba Mais</button>
-           </div>
-           <div className="caixa-imagem-cafe">
-                <img src={cafe} alt="" />
-           </div>
+                <button>SAIBA MAIS</button>
+           </TextosNovidades>
+           <CaixaImagemCafe>
+                <img src={cafe} alt="Imagem de um grão de café com três tipos de torras diferentes (leve, média e escura)." />
+           </CaixaImagemCafe>
         </FundoNovidades>
     )
 }
