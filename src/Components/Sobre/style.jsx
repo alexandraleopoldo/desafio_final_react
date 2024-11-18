@@ -21,6 +21,7 @@ export const FundoSobre = styled.section`
 
     img {
         width: 24%;
+        border-radius: 10px;
 
         @media (max-width: 780px) {
             width: 60%;
