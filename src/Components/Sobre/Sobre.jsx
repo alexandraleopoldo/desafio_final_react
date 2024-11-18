@@ -5,7 +5,7 @@ import { TextoSobre } from "./style"
 export default function Sobre() {
     return (
         <FundoSobre>
-          <img src={loja} alt="" />
+          <img src={loja} data-aos="fade-down" alt="Imagem da primeira loja Starbucks" />
           <TextoSobre>
           <h3>PREPARAÇÃO</h3>
            <h2>História</h2>

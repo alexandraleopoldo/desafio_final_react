@@ -21,7 +21,7 @@ export default function Novidades() {
                 </p>
                 <button>SAIBA MAIS</button>
            </TextosNovidades>
-           <CaixaImagemCafe>
+           <CaixaImagemCafe data-aos="fade-up">
                 <img src={cafe} alt="Imagem de um grão de café com três tipos de torras diferentes (leve, média e escura)." />
            </CaixaImagemCafe>
         </FundoNovidades>

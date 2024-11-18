@@ -7,15 +7,16 @@ export const FundoNovidades = styled.section`
     height: 100%;
     justify-content: center;
     align-items: center;
+   
 
     @media (max-width: 780px) {
         flex-direction: column;
-        min-height: 100vh;
         overflow-y: auto;
+        justify-content: flex-start;
+        gap: 30px;
        
     }
     @media (max-width: 1180px) {
-        min-height: 100vh;
         overflow-y: auto;
        && h2 {
             font-size: 3rem;
@@ -38,26 +39,34 @@ export const TextosNovidades = styled.div`
         margin-left: 50px;
     }
     @media (max-width: 780px) {
-        width: 80%;
-        height: 60%;
+        width: 90%;
+        height: auto;
         margin: 0;
+      
      
 
         &&  h3 {
                 font-size: 0.8rem;
+                margin-top: 100px;
+                margin-left: 16px;
             }
 
            && h2 {
                 font-size: 1.5rem;
                 margin-top: 10px;
+                margin-left: 16px;
             }
 
            && p {
+                width: 90%;
                 font-size: 0.8rem;
-                margin-top: 16px;
+                margin: 24px 0;
             }
             button {
-              width: 100%;
+              width: 90%;
+              margin-bottom: 20px;
+              margin-top: 20px;
+              align-self: center;
             }
     }
 
@@ -92,11 +101,14 @@ export const CaixaImagemCafe = styled.div`
         width: 30%;
     }
     @media (max-width: 780px) {
-        width: 180px;
-        min-height: 150px;
+        width: 200px;
+        min-height: 180px;
+        justify-content: flex-start;
+      
 
         && img {
             width: 100%;
+            margin-top: 20px;
         }
     }
 

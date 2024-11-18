@@ -23,9 +23,9 @@ export const FundoSobre = styled.section`
         width: 24%;
 
         @media (max-width: 780px) {
-            width: 40%;
+            width: 60%;
             border-radius: 20px;
-            margin: 30px 0; 
+            margin-top: 30px; 
         }
 
     }
@@ -50,22 +50,25 @@ export const TextoSobre = styled.div `
         
           &&  h3 {
                 font-size: 0.6rem;
-                align-self: center;
+                margin-left: 14px;
                 
             }
 
            && h2 {
                 font-size: 1.4rem;
-                align-self: center;
+                margin-left: 14px;
+                margin-top: 10px;
             }
 
            && p {
-                text-align: center;
+                font-size: 0.8rem;
                 width: 90%;
+                margin-top: 10px;
             }
             button {
                 align-self: center;
                 margin-bottom: 20px;
+                width: 100%;
             }
     }
     

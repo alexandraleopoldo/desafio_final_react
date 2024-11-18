@@ -30,19 +30,14 @@ export const SectionHome = styled.section`
             gap: 20px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 780px) {
             flex-direction: column;
             width: 100%;
-            height: auto;
+            height: 80%;
             padding: 10px;
+            overflow-y: hidden;
         }
 
-        @media (max-width: 480px) {
-            flex-direction: column;
-            width: 100%;
-            height: auto;
-            padding: 5px;
-        }
     }
 `;
 
@@ -98,6 +93,13 @@ export const TextoHome = styled.div`
         @media (max-width: 980px) {
             font-size: 16px;
         }
+    }
+
+    button {
+        @media (max-width: 780px){
+            width: 100%;
+        }
+        
     }
 `;
 
@@ -197,5 +199,6 @@ export const Esconder = styled.div`
     @media (max-width: 800px) {
         display: flex;
         align-self: auto;
+        margin-bottom: 30px;
     }
 `;

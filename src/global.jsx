@@ -43,6 +43,12 @@ export const GlobalStyle = createGlobalStyle`
             height: 34px;
         }
      }
-
+     
+     #root {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+     }
      
 `;
