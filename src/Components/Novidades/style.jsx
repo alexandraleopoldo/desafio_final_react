@@ -59,7 +59,7 @@ export const TextosNovidades = styled.div`
 
            && p {
                 width: 90%;
-                font-size: 0.8rem;
+                font-size: 0.9rem;
                 margin: 24px 0;
             }
             button {

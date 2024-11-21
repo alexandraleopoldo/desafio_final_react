@@ -50,20 +50,17 @@ export const TextoSobre = styled.div `
         margin: 0;
         
           &&  h3 {
-                font-size: 0.6rem;
-                margin-left: 14px;
-                
+                font-size: 0.7rem;
             }
 
            && h2 {
-                font-size: 1.4rem;
-                margin-left: 14px;
+                font-size: 1.5rem;
                 margin-top: 10px;
             }
 
            && p {
-                font-size: 0.8rem;
-                width: 90%;
+                font-size: 0.9em;
+                width: 100%;
                 margin-top: 10px;
             }
             button {

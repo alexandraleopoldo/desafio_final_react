@@ -36,6 +36,7 @@ export const SectionHome = styled.section`
             height: 80%;
             padding: 10px;
             overflow-y: hidden;
+            overflow-x: hidden;
         }
 
     }
