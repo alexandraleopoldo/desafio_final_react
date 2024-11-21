@@ -55,7 +55,7 @@ export default function Home() {
                 </Copinhos>
           </div>
           <BolasCores className={`${corFundo} `} >
-                <img src={imagem} data-aos="fade-down" alt="Copo grande amarelo com macchiato do Starbucks" />
+                <img src={imagem} data-aos="fade-left" alt="Copo grande amarelo com macchiato do Starbucks" />
           </BolasCores>
           <Esconder>
                         <img src={mAmarelo}  onClick={clicarAmarelo}  alt="Copo pequeno amarelo com macchiato do Starbucks" />
